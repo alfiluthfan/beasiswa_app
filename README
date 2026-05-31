@@ -1,0 +1,27 @@
+# 🎓 Sistem Pendaftaran Beasiswa Mahasiswa
+
+Sebuah aplikasi berbasis web interaktif untuk memfasilitasi pendaftaran beasiswa mahasiswa secara digital. Aplikasi ini dirancang untuk memastikan validasi data yang ketat serta memberikan pengalaman pengguna (UX) yang baik dan responsif.
+
+## ✨ Fitur Utama
+
+- **Pengecekan Syarat Otomatis (JavaScript):** Form pendaftaran, tombol daftar, dan unggah berkas akan otomatis dinonaktifkan (disabled) jika sistem mendeteksi IPK pendaftar di bawah 3.0.
+- **Validasi Nomor Telepon Real-time:** Memblokir input huruf/teks pada kolom nomor HP saat pengguna mengetik, serta otomatis mengubah awalan `0` atau `62` menjadi standar internasional `+62` di sisi *backend*.
+- **Validasi Berkas & Anti-Duplikasi:** Sistem akan menolak ukuran file unggahan yang lebih dari 2 MB dan menolak pendaftaran jika email yang digunakan sudah terdaftar di *database*.
+- **Custom Popup Modal:** Menggunakan sistem *modal* kustom berbasis Tailwind CSS untuk konfirmasi pendaftaran, peringatan *error*, maupun notifikasi sukses (tanpa *alert* bawaan *browser* yang kaku).
+- **Tabel Hasil Pendaftaran:** Menampilkan data pendaftar yang diurutkan dari yang terbaru (Descending) lengkap dengan indikator status ajuan.
+
+## 🛠️ Teknologi yang Digunakan
+
+- **Backend:** PHP Native (Murni tanpa *framework*)
+- **Frontend:** HTML5, Tailwind CSS (via CDN)
+- **Interaktivitas:** Vanilla JavaScript (ES6)
+- **Database:** MySQL / MariaDB
+
+## 🚀 Panduan Instalasi (Localhost)
+
+Jika Anda ingin menjalankan aplikasi ini di komputer lokal, ikuti langkah-langkah berikut:
+
+1. Pastikan Anda sudah menginstal **XAMPP** (atau *web server* lokal lainnya).
+2. *Clone* repositori ini ke dalam folder `htdocs` Anda:
+   ```bash
+   git clone [https://github.com/alfiluthfan/beasiswa_app.git](https://github.com/alfiluthfan/beasiswa_app.git)
