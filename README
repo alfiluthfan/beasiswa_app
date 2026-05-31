@@ -25,3 +25,20 @@ Jika Anda ingin menjalankan aplikasi ini di komputer lokal, ikuti langkah-langka
 2. *Clone* repositori ini ke dalam folder `htdocs` Anda:
    ```bash
    git clone [https://github.com/alfiluthfan/beasiswa_app.git](https://github.com/alfiluthfan/beasiswa_app.git)
+3. Buka phpMyAdmin (http://localhost/phpmyadmin) dan buat database baru dengan nama db_beasiswa.
+4. CREATE TABLE pendaftaran (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nama VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    no_hp VARCHAR(20) NOT NULL,
+    semester INT NOT NULL,
+    ipk DECIMAL(3,2) NOT NULL,
+    pilihan_beasiswa VARCHAR(50) NOT NULL,
+    berkas VARCHAR(255) NOT NULL,
+    status_ajuan VARCHAR(50) NOT NULL
+);
+5. Buat sebuah folder kosong bernama uploads di dalam folder utama proyek untuk menyimpan berkas pendaftar.
+6. ### Langkah 3: Unggah Perubahan ke GitHub
+Karena sebelumnya Anda sudah berhasil menghubungkan proyek ini ke GitHub, sekarang Anda hanya perlu mengirim file yang baru ditambahkan (yaitu `README.md`) ke repositori.
+
+Buka **Terminal** di VS Code, lalu jalankan tiga perintah ini secara berurutan (tekan Enter setelah tiap baris):
